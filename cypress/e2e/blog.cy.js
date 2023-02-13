@@ -18,14 +18,6 @@ describe("Get list of recent posts, check they are >10 characters & total of 5 p
                         expect(text.length).to.be.gte(10)
                         cy.log(text)
                      })
-                    
-                     //works:
-                     //expect(text.length).to.be.at.least(10)
-                
-
-                    //doesn't work:
-                    // assertion error
-                    //cy.get($list[i]).invoke('text').then(parseFloat).should("be.gt", 10)
                 }
             })
 
