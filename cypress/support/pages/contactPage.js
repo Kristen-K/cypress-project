@@ -3,13 +3,14 @@ import { faker } from '@faker-js/faker';
 class ContactPage {
 
     elements = {
-        inputName: () => cy.get("#evf-277-field_ys0GeZISRs-1"), 
-        inputEmail: () => cy.get("#evf-277-field_LbH5NxasXM-2"),
-        inputPhoneNumber: () => cy.get("#evf-277-field_66FR384cge-3"),
-        textAreaMessage: () => cy.get("#evf-277-field_yhGx3FOwr2-4"), 
-        submitBtn: () => cy.get("#evf-submit-277"),
-        alertRole: () => cy.get("[role='alert']")
+        inputName : () => cy.get("#evf-277-field_ys0GeZISRs-1"), 
+        inputEmail : () => cy.get("#evf-277-field_LbH5NxasXM-2"),
+        inputPhoneNumber : () => cy.get("#evf-277-field_66FR384cge-3"),
+        textAreaMessage : () => cy.get("#evf-277-field_yhGx3FOwr2-4"), 
+        submitBtn : () => cy.get("#evf-submit-277"),
+        alertRole : () => cy.get("[role='alert']")
     }
+    
     visit() {
         cy.visit("/contact/")
     }
