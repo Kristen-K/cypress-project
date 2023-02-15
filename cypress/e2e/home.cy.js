@@ -2,7 +2,7 @@
 describe('Home', () => {
 
     beforeEach(() => {
-        cy.visit("https://practice.automationbro.com")
+        cy.visit("/")
     })
     context("Home Page", () => {
         it("open URL", () => {
